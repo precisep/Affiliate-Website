@@ -2,7 +2,11 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+from django.conf.urls.static import static
 
+if settings.DEBUG:
+urlpatterns += static(settings.STATIC_URL,
+                      document_root=settings.STATIC_ROOT)
 
 def main():
     """Run administrative tasks."""
