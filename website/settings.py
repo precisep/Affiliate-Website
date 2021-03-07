@@ -48,7 +48,7 @@ ROOT_URLCONF = 'website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['affiliate/Static/affiliate/Templates'],
+        'DIRS': ['affiliate/Static/Templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
